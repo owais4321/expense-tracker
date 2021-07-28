@@ -1,0 +1,46 @@
+:root {
+    --box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+
+.exp-inc-box{
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: var(--box-shadow);
+    margin:20px 0px;
+    padding:20px
+}
+
+.money{
+    margin: 0px 20px;
+    padding: 0px;
+}
+
+h1,h2,h3,h4{
+    letter-spacing: 1px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.exp-inc-box .exp, .inc{
+    margin: 0px 20px; 
+}
+
+.exp-inc-box .inc{
+    padding-right:50px; 
+    border-right: 1px #e6e6e6 solid  
+}
+.money{
+    font-size: 20px;
+    font-weight: bold;
+}
+.inc p{
+    color:  #b69647
+}
+.exp p{
+    color: #3fa4ad
+}
