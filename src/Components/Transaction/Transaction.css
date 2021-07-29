@@ -13,6 +13,7 @@
     padding: 10px;
     box-shadow: var(--box-shadow);
     position: relative;
+    margin: 10px
 } 
 .plus{
 border-right:5px #b69647 solid;
