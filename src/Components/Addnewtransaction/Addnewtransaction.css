@@ -1,0 +1,8 @@
+.addnewtransaction h2{
+padding-bottom:5px;
+border-bottom: 1px solid #dedede;
+font-size: 18px;
+}
+.addnewtransaction{
+    padding: 10px;
+}

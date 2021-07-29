@@ -10,10 +10,10 @@
     background: white;
     display: flex;
     justify-content: space-between;
+    position: relative;
     padding: 10px;
     box-shadow: var(--box-shadow);
-    position: relative;
-    margin: 10px
+    margin: 20px 0px;
 } 
 .plus{
 border-right:5px #b69647 solid;
@@ -23,7 +23,7 @@ border-right:5px #b69647 solid;
     border-right:5px #3fa4ad solid;
 } 
 
-button{
+.delbtn{
 position: absolute;
 left: 0px;
 top: 50%;

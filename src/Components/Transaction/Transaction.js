@@ -1,6 +1,8 @@
 import './Transaction.css'
+
 const Transaction = (props) => {
-    return (
+
+    return (    
         <div className={props.className}>
             <div className='desc'>
             Salary

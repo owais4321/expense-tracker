@@ -6,6 +6,9 @@ import AccountSummary from './Components/AccountSummary/AccountSummary';
 import Transaction from './Components/Transaction/Transaction';
 import Transactions from './Components/Transactions/Transactions';
 import TransactionHistory from './Components/TransactionHistory/TransactionHistory';
+import Input from './Components/Input/Input';
+import Label from './Components/Label/Label';
+import Addnewtransaction from './Components/Addnewtransaction/Addnewtransaction';
 
 function App() {
   return (
@@ -14,6 +17,7 @@ function App() {
       <Balance/>
       <AccountSummary/>
       <TransactionHistory/>
+      <Addnewtransaction/>  
     </div>
   );
 }
