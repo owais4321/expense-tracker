@@ -5,10 +5,10 @@ const Transaction = (props) => {
     return (    
         <div className={props.className}>
             <div className='desc'>
-            Salary
+            {props.desc}
             </div>
             <div className='amn'>
-            6$
+            {props.amn}
             </div>
             <button className='delbtn'>X</button>
         </div>

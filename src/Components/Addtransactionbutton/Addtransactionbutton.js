@@ -1,8 +1,8 @@
 import './Addtransactionbutton.css'
-const Addtransactionbutton =()=>{
+const Addtransactionbutton =(props)=>{
 return(
     <div className='addtransactionbutton'>
-        <button>
+        <button onClick={props.onClick}>
             Add Transaction
         </button>
     </div>        

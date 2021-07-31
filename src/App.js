@@ -9,9 +9,10 @@ import TransactionHistory from './Components/TransactionHistory/TransactionHisto
 import Input from './Components/Input/Input';
 import Label from './Components/Label/Label';
 import Addnewtransaction from './Components/Addnewtransaction/Addnewtransaction';
-
+import {GlobalContextProvider} from './Context/Globalstate';
 function App() {
   return (
+    <GlobalContextProvider>
     <div className="App">
       <Header/>
       <Balance/>
@@ -19,6 +20,7 @@ function App() {
       <TransactionHistory/>
       <Addnewtransaction/>  
     </div>
+    </GlobalContextProvider>
   );
 }
 
