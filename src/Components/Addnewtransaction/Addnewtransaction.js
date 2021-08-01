@@ -9,6 +9,15 @@ const Addnewtransaction = () => {
     let [amount, setamount] = useState('')
     let [description, setdescription] = useState('')
     let { addT } = useContext(GlobalContext)
+    const clickHandler=(e)=>{
+        addT({
+            id:new Date().getTime(),
+            amount:amount,
+            description:description
+        })
+        setamount('')
+        setdescription('')
+    }
     return (
         <div className='addnewtransaction'>
             <h2>Add new Transaction</h2>
@@ -25,16 +34,9 @@ const Addnewtransaction = () => {
                 value={amount}
                 required
                 placeholder='Add amount of Transaction'/>
-            <Addtransactionbutton onClick={(e)=>{
-                addT({
-                    id:new Date().getTime(),
-                    amount:amount,
-                    description:description
-                })
-            }}/>
+            <Addtransactionbutton onClick={(e)=>clickHandler(e)}/>
         </div>
     )
-
 }
 
 export default Addnewtransaction;
