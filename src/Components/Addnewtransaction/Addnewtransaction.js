@@ -9,8 +9,6 @@ const Addnewtransaction = () => {
     let [amount, setamount] = useState('')
     let [description, setdescription] = useState('')
     let { addT } = useContext(GlobalContext)
-    console.log(amount)
-    console.log(description)
     return (
         <div className='addnewtransaction'>
             <h2>Add new Transaction</h2>
