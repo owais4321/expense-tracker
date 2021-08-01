@@ -1,10 +1,10 @@
-export default (state, action) => {
+const AppReducer= (state, action) => {
     switch (action.type) {
         case 'DELETETRANSACTION':
             return {
                 ...state,
                 transactions: state.transactions
-                .filter(transaction => transaction.id != action.payload)
+                .filter(transaction => transaction.id !== action.payload)
             }
         case 'ADDTRANSACTION':
             return {
@@ -17,3 +17,4 @@ export default (state, action) => {
     };
 }
 
+export default AppReducer;

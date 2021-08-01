@@ -2,12 +2,10 @@ import './Transaction.css'
 import {useContext} from 'react';
 import {GlobalContext} from '../../Context/Globalstate';
 const Transaction = (props) => {
-    const {deleteT,transactions} =useContext(GlobalContext);
+    const {deleteT} =useContext(GlobalContext);
     const clickHandler=(e)=>{
     let id=e.target.getAttribute('id');
-    console.log(id,transactions);
     deleteT(id);
-    // console.log(transactions)
     }
     return (    
         <div className={props.className}>

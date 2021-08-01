@@ -14,7 +14,6 @@ let plus=transactions.filter(t=>t.amount>0);
 let minus=transactions.filter(t=>t.amount<0);
 let inc=sum(plus);
 let exp=sum(minus)*(1-2);
-console.log('income',inc)
     return (
         <div className='exp-inc-box'>
             <div className='money inc'>

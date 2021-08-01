@@ -11,7 +11,7 @@ const Addnewtransaction = () => {
     let { addT } = useContext(GlobalContext)
     const clickHandler=(e)=>{
         addT({
-            id:new Date().getTime(),
+            id:new Date().getTime().toString(),
             amount:amount,
             description:description
         })
